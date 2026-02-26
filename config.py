@@ -134,7 +134,7 @@ class VLMConfig:
     # Quantization
     load_in_4bit: bool = True
     bnb_4bit_quant_type: str = "nf4"
-    bnb_4bit_compute_dtype: str = "bfloat16"
+    bnb_4bit_compute_dtype: str = "float16"
     # LoRA
     lora_r: int = 16
     lora_alpha: int = 32
@@ -159,8 +159,8 @@ class VLMConfig:
     output_dir: Path = VLM_CKPT_DIR
     resume_from_checkpoint: bool = True              # auto-detect latest
     # Hardware
-    fp16: bool = False
-    bf16: bool = True                                # T4 supports bf16 via amp
+    fp16: bool = True
+    bf16: bool = False                                # T4 supports bf16 via amp
     gradient_checkpointing: bool = True              # save VRAM
     device: str = "cuda:0"
 
