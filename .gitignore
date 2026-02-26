@@ -1,0 +1,44 @@
+# ── Data & Weights (never commit large files) ──
+data/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.engine
+runs/
+outputs/
+wandb/
+checkpoints/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── Environment ──
+.env
+.venv/
+venv/
+env/
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Kaggle artifacts ──
+/kaggle/
